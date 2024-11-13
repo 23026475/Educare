@@ -1,6 +1,6 @@
 <template>
   <div class="p-6 bg-blue-500 text-white text-center">
-    <h1 class="text-3xl font-bold">Hello, Tailwind CSS with Vue!</h1>
+    <h1 class="text-3xl font-bold">Hello</h1>
   </div>
 </template>
 
