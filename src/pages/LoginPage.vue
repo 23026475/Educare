@@ -1,53 +1,86 @@
 <template>
-    <div
-      class="w-full relative bg-teal-100 overflow-hidden flex flex-row items-start justify-end leading-[normal] tracking-[normal]"
+  <div
+    class="w-full relative bg-teal-100 overflow-hidden flex flex-col items-start justify-start py-0 pl-[571px] pr-0 box-border leading-[normal] tracking-[normal] mq450:pl-5 mq450:box-border mq800:pl-[285px] mq800:box-border"
+  >
+    <form
+      class="m-0 w-[902px] rounded-tl-21xl rounded-tr-sm rounded-br-sm rounded-bl-21xl bg-white flex flex-col items-start justify-start pt-0 pb-[149px] pl-[66px] pr-[33px] box-border relative gap-[47px] max-w-[104%] mq1150:pl-[33px] mq1150:pb-[97px] mq1150:box-border mq450:gap-[23px] mq450:pb-[63px] mq450:box-border"
     >
-      <section
-        class="w-[900px] rounded-tl-11xl rounded-tr-none rounded-br-none rounded-bl-11xl bg-white overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[248px] pb-[152px] pl-[159px] pr-[131px] box-border relative gap-[107px] max-w-full text-center text-13xl text-gray font-syne mq450:gap-[27px] mq450:pt-[105px] mq450:px-5 mq450:pb-16 mq450:box-border mq1000:gap-[53px] mq1000:pt-[161px] mq1000:pb-[99px] mq1000:pl-[79px] mq1000:pr-[65px] mq1000:box-border"
-      >
-        <img
-          class="w-[535px] h-[506px] absolute !m-[0] bottom-[-166px] left-[-131px]"
-          loading="lazy"
-          alt=""
-          src="/ellipse-4.svg"
-        />
-        <img
-          class="w-[535px] h-[506px] absolute !m-[0] top-[-170px] right-[-124px]"
-          alt=""
-          src="/ellipse-4-1.svg"
-        /><FrameComponent />
-        <div
-          class="self-stretch flex flex-row items-start justify-start py-0 pl-2.5 pr-0 box-border max-w-full"
-        >
-          <div class="h-[81px] flex-1 relative max-w-full">
-            <div
-              class="absolute top-[8px] left-[0px] shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] rounded-xl bg-teal-100 w-[600px] h-[73px] z-[1]"
-            />
-            <h2
-              class="m-0 absolute top-[0px] left-[8px] text-inherit font-semibold font-[inherit] flex items-center justify-center w-full h-full z-[2] mq450:text-lgi mq1000:text-7xl"
-            >
-              Get Instructions
-            </h2>
-          </div>
-        </div>
-      </section>
-      <img
-        class="h-[750px] w-[666px] absolute !m-[0] bottom-[0px] left-[31px] object-cover z-[3]"
-        alt=""
-        src="/add-a-heading-3-4@2x.png"
+      <div
+        class="w-[524px] h-[92px] relative overflow-hidden shrink-0 hidden max-w-full z-[0]"
       />
-      <AppHeader /> <!-- This should be AppHeader if it’s the header component -->
+      <Container />
+      <div
+        class="w-[680px] flex flex-row items-start justify-start pt-0 px-[15px] pb-[35px] box-border max-w-full shrink-0"
+      >
+        <div
+          class="flex-1 flex flex-row items-start justify-start relative max-w-full"
+        >
+          <div
+            class="h-[348px] w-[687px] absolute !m-[0] bottom-[-231px] left-[-230px]"
+          >
+            <img
+              class="absolute top-[0px] left-[0px] w-[535px] h-[506px]"
+              alt=""
+              src="/ellipse-2.svg"
+            />
+            <img
+              class="absolute top-[232px] left-[420px] w-[267px] h-16 overflow-hidden z-[1]"
+              loading="lazy"
+              alt=""
+              src="/frame-5.svg"
+            />
+          </div>
+          <button
+            class="cursor-pointer [border:none] py-1.5 pl-1 pr-[3px] bg-teal-100 flex-1 shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] rounded-xl flex flex-row items-start justify-start box-border max-w-full z-[1] hover:bg-cadetblue"
+          >
+            <div
+              class="h-[73px] w-[650px] relative shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] rounded-xl bg-teal-100 hidden max-w-full"
+            />
+            <div
+              class="h-[61px] flex-1 relative text-17xl font-semibold font-syne text-gray text-center flex items-center justify-center max-w-full z-[2] mq450:text-3xl mq800:text-10xl"
+            >
+              Login
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        class="w-[704px] h-px flex flex-row items-start justify-start py-0 pl-[35px] pr-[34px] box-border max-w-full"
+      >
+        <div
+          class="self-stretch flex-1 relative border-black border-t-[1px] border-solid box-border max-w-full z-[1]"
+        />
+      </div>
+      <h1
+        class="!m-[0] w-[673px] absolute top-[107px] left-[-599px] text-21xl font-semibold font-syne text-white text-center flex items-center justify-center z-[4] mq450:text-5xl mq800:text-13xl"
+      >
+        A Teacher’s Assistant for Engaging and Interactive Learning
+      </h1>
+      <img
+        class="w-[644px] h-[778px] absolute !m-[0] bottom-[-118px] left-[-537px] object-cover z-[5]"
+        alt=""
+        src="/add-a-heading-3-3@2x.png"
+      />
+    </form>
+    <div class="w-[397px] h-[314px] absolute !m-[0] top-[0px] left-[0px]">
+      <img
+        class="absolute top-[31px] left-[34px] w-[95px] h-[69px] overflow-hidden"
+        loading="lazy"
+        alt=""
+        src="/book-open.svg"
+      />
+      <div
+        class="absolute top-[-231px] left-[-138px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[50%] bg-darkturquoise-300 border-darkturquoise-200 border-[0px] border-solid box-border w-[537px] h-[547px] z-[5]"
+      />
     </div>
-  </template>
-  
-  <script>
-    import { defineComponent } from "vue";
-    import FrameComponent from "../components/FrameComponent.vue";
-    import AppHeader from "../components/AppHeader.vue"; // Ensure the component name matches
-  
-    export default defineComponent({
-      name: "PasswordResetPage",
-      components: { FrameComponent, AppHeader },
-    });
-  </script>
-  
+  </div>
+</template>
+<script>
+  import { defineComponent } from "vue";
+  import Container from "../components/Container.vue";
+
+  export default defineComponent({
+    name: "LoginPage",
+    components: { Container },
+  });
+</script>
