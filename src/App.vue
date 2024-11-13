@@ -1,14 +1,18 @@
 <!-- src/App.vue -->
 <template>
   <div id="app">
-    
+    <Navbar />
     <router-view /> <!-- Renders the component based on the route -->
   </div>
 </template>
 
 <script>
+import Navbar from "./components/Navbar.vue";
 export default {
   name: 'App',
+  components: {
+    Navbar,
+  },
 };
 </script>
 
@@ -19,7 +23,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
 
