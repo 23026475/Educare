@@ -16,124 +16,7 @@
         <div
           class="self-stretch flex flex-row items-start justify-start gap-[49px] mq1000:flex-wrap"
         >
-          <div
-            class="flex-1 flex flex-col items-start justify-start min-w-[139.3px]"
-          >
-            <NamePlaceholders
-              firstName="First name"
-              rectangle19="/rectangle-19.svg"
-            /><NamePlaceholders
-              firstName="Email address"
-              rectangle19="/rectangle-12.svg"
-            />
-            <div class="self-stretch h-[75.6px] relative">
-              <div
-                class="absolute top-0 left-0 font-semibold flex items-center w-[179.9px] h-[46.9px] mq450:text-base"
-              >
-                Phone number
-              </div>
-              <img
-                class="absolute top-[40.6px] left-0 w-[212.8px] h-[35px] z-[1]"
-                loading="lazy"
-                alt=""
-                src="/rectangle-14.svg"
-              />
-            </div>
-            <div
-              class="w-[182.7px] h-[46.9px] flex flex-row items-start justify-start py-0 px-0.35 box-border"
-            >
-              <div class="flex-1 relative font-semibold mq450:text-base">
-                Password
-              </div>
-            </div>
-            <div
-              class="self-stretch flex flex-row items-start justify-start pt-0 pb-[1.4px] pl-0.35 pr-0"
-            >
-              <img
-                class="h-[35px] flex-1 relative max-w-full overflow-hidden z-[1]"
-                loading="lazy"
-                alt=""
-                src="/rectangle-16.svg"
-              />
-            </div>
-            <NamePlaceholders
-              firstName="School level"
-              rectangle19="/rectangle-18.svg"
-            />
-          </div>
-          <div
-            class="flex-1 flex flex-col items-start justify-start gap-[28.7px] min-w-[139.3px]"
-          >
-            <div
-              class="w-[179.9px] h-[46.9px] flex flex-row items-start justify-start relative"
-            >
-              <div class="flex-1 relative font-semibold mq450:text-base">
-                Last Name
-              </div>
-              <img
-                class="h-[35px] w-[212.8px] absolute !m-0 right-[-32.9px] bottom-[-28.7px] z-[1]"
-                loading="lazy"
-                alt=""
-                src="/rectangle-11.svg"
-              />
-            </div>
-            <div
-              class="w-[179.9px] h-[46.9px] flex flex-row items-start justify-start relative"
-            >
-              <div class="flex-1 relative font-semibold mq450:text-base">
-                Confirm Email address
-              </div>
-              <img
-                class="h-[35px] w-[212.8px] absolute !m-0 right-[-32.9px] bottom-[-28.7px] z-[1]"
-                loading="lazy"
-                alt=""
-                src="/rectangle-13.svg"
-              />
-            </div>
-            <div
-              class="w-[179.9px] h-[46.9px] flex flex-row items-start justify-start relative"
-            >
-              <div class="flex-1 relative mq450:text-base">
-                <span class="font-semibold">Confirm</span>
-                <span class="font-semibold font-inter"> Phone number</span>
-              </div>
-              <img
-                class="h-[35px] w-[212.8px] absolute !m-0 right-[-32.9px] bottom-[-28.7px] z-[1]"
-                loading="lazy"
-                alt=""
-                src="/rectangle-15.svg"
-              />
-            </div>
-            <div
-              class="w-[179.9px] h-[46.9px] flex flex-row items-start justify-start relative"
-            >
-              <div class="flex-1 relative mq450:text-base">
-                <span class="font-semibold">Confirm</span>
-                <span class="font-semibold font-inter"> Password</span>
-              </div>
-              <img
-                class="h-[35px] w-[212.8px] absolute !m-0 right-[-32.9px] bottom-[-28.7px] z-[1]"
-                loading="lazy"
-                alt=""
-                src="/rectangle-17.svg"
-              />
-            </div>
-            <div
-              class="self-stretch h-[88.2px] flex flex-col items-start justify-start gap-[6.3px]"
-            >
-              <div
-                class="w-[179.9px] relative font-semibold flex items-center mq450:text-base"
-              >
-                Role
-              </div>
-              <img
-                class="self-stretch h-[35px] relative max-w-full overflow-hidden shrink-0"
-                loading="lazy"
-                alt=""
-                src="/rectangle-10.svg"
-              />
-            </div>
-          </div>
+         <RegistrationForm/>
         </div>
         <div
           class="self-stretch flex flex-row items-start justify-start py-0 pl-[9.1px] pr-1.4 box-border max-w-full text-center text-12xl text-gray"
@@ -174,11 +57,12 @@
 
 <script>
 import { defineComponent } from "vue";
-import NamePlaceholders from "./NamePlaceholders.vue";
+
+import RegistrationForm from "./RegistrationForm.vue";
 
 export default defineComponent({
   name: "CreateAccountButton",
-  components: { NamePlaceholders },
+  components: { RegistrationForm },
 });
 </script>
 
