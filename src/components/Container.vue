@@ -142,7 +142,7 @@
     import { defineComponent } from "vue";
   
     export default defineComponent({
-      name: "Container",
+      name: "BaseContainer",
       methods: {
         onSignUpTextClick() {
           this.$router.push("/");

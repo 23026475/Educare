@@ -3,6 +3,7 @@
   <div id="app">
     <nav>
       <router-link to="/">SignUpPage</router-link>
+      <router-link to="/LogIn">LoginPage</router-link>
     </nav>
     <router-view /> <!-- Renders the component based on the route -->
   </div>
