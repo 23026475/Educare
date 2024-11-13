@@ -1,3 +1,4 @@
+
 <template>
     <div
       class="w-full h-[1024px] relative bg-teal-200 overflow-hidden flex flex-col items-start justify-start py-0 pl-[579px] pr-0 box-border leading-[normal] tracking-[normal] text-center text-21xl text-white font-syne mq450:pl-5 mq450:box-border mq975:h-auto mq975:pl-[289px] mq975:box-border"
