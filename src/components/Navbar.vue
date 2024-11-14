@@ -17,8 +17,8 @@
       </div>
       <!-- Mobile Menu -->
       <ul v-if="isMenuOpen" class="md:hidden flex flex-col space-y-2 mt-4">
-        <li><router-link to="/" class="hover:text-teal-200">Sign Up</router-link></li>
-        <li><router-link to="/login" class="hover:text-teal-200">Login</router-link></li>
+        <li><router-link to="/sign-up" class="hover:text-teal-200">Sign Up</router-link></li>
+        <li><router-link to="/" class="hover:text-teal-200">Login</router-link></li>
         <li><router-link to="/password-reset" class="hover:text-teal-200">Password Reset</router-link></li>
       </ul>
     </nav>
