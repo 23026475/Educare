@@ -14,22 +14,7 @@
       >
         <div
           class="flex-1 flex flex-row items-start justify-start relative max-w-full"
-        >
-          <div
-            class="h-[348px] w-[687px] absolute !m-[0] bottom-[-231px] left-[-230px]"
-          >
-            <img
-              class="absolute top-[0px] left-[0px] w-[535px] h-[506px]"
-              alt=""
-              src="/ellipse-2.svg"
-            />
-            <img
-              class="absolute top-[232px] left-[420px] w-[267px] h-16 overflow-hidden z-[1]"
-              loading="lazy"
-              alt=""
-              src="/frame-5.svg"
-            />
-          </div>
+        >   
           <button
             class="cursor-pointer [border:none] py-1.5 pl-1 pr-[3px] bg-teal-100 flex-1 shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] rounded-xl flex flex-row items-start justify-start box-border max-w-full z-[1] hover:bg-cadetblue"
           >
@@ -57,20 +42,20 @@
         A Teacher’s Assistant for Engaging and Interactive Learning
       </h1>
       <img
-        class="w-[644px] h-[778px] absolute !m-[0] bottom-[-118px] left-[-537px] object-cover z-[5]"
+        class="w-[600px] h-[800px] absolute !m-[0] bottom-[-118px] left-[-537px] object-cover z-[5]"
         alt=""
-        src="/add-a-heading-3-3@2x.png"
+        src="@/images/educare-logo.png"
       />
     </form>
     <div class="w-[397px] h-[314px] absolute !m-[0] top-[0px] left-[0px]">
       <img
         class="absolute top-[31px] left-[34px] w-[95px] h-[69px] overflow-hidden"
         loading="lazy"
-        alt=""
-        src="/book-open.svg"
+        alt="book icon"
+        src="@/images/book-icon-transparent-27.jpg"
       />
       <div
-        class="absolute top-[-231px] left-[-138px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[50%] bg-darkturquoise-300 border-darkturquoise-200 border-[0px] border-solid box-border w-[537px] h-[547px] z-[5]"
+        class="absolute top-[-231px] left-[-138px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-[50%] bg-darkturquoise-300 border-darkturquoise-200 border-[0px] border-solid box-border w-[537px] h-[547px]"
       />
     </div>
   </div>
