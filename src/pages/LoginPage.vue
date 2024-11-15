@@ -55,3 +55,9 @@
     components: { Container },
   });
 </script>
+
+<style scoped>
+.text-red-500 {
+  color: #f56565;
+}
+</style>
