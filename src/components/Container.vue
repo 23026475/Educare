@@ -111,10 +111,10 @@
             <i class="fas fa-cloud"></i>
           </button>
           <button class="bg-teal-500 p-3 rounded-full text-white shadow hover:bg-teal-600 transition">
-            <i class="fas fa-windows"></i>
+            <i class="fa-brands fa-windows"></i>
           </button>
           <button class="bg-teal-500 p-3 rounded-full text-white shadow hover:bg-teal-600 transition">
-            <i class="fas fa-envelope"></i>
+            <i class="fa-brands fa-google"></i>
           </button>
         </div>
       </div>
