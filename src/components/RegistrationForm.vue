@@ -56,6 +56,8 @@
           v-model="phoneNumber"
           type="tel"
           class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+          pattern="^[0-9]{10}$"
+          title="Enter a valid 10-digit phone number"
           required
         />
       </div>
@@ -66,6 +68,16 @@
         <input
           id="school"
           v-model="school"
+          type="text"
+          class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+          required
+        />
+      </div>
+      <div>
+        <label for="StudyLevel" class="block text-sm font-semibold text-gray-700">Study Level</label>
+        <input
+          id="StudyLevel"
+          v-model="StudyLevel"
           type="text"
           class="w-full mt-1 p-2 border border-gray-300 rounded-md"
           required
@@ -97,6 +109,7 @@
           v-model="password"
           type="password"
           class="w-full mt-1 p-2 border border-gray-300 rounded-md"
+          minlength="8"
           required
         />
       </div>
@@ -116,79 +129,88 @@
       <!-- Submit Button -->
       <div>
         <button
-          type="submit"
-          class="w-full p-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600"
-        >
-          Submit
+            @click="register" class="w-full p-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600"
+          >
+          {{ loading ? 'Submitting...' : 'Submit' }}
         </button>
+      </div>
+      <div>
+        <button @click="signInWithGoogle">SignIn With Google</button>
       </div>
     </form>
   </template>
   
   <script>
-  import { db } from '../firebaseConfig';
-  import { collection, addDoc } from 'firebase/firestore';
-  
-  export default {
-    data() {
-      return {
-        firstName: '',
-        lastName: '',
-        email: '',
-        confirmEmail: '',
-        phoneNumber: '',
-        school: '',
-        password: '',
-        confirmPassword: '',
-        role: ''
-      };
-    },
-    methods: {
-      async submitRegistration() {
-        if (this.email !== this.confirmEmail) {
-          alert("Emails do not match!");
-          return;
-        }
-        if (this.password !== this.confirmPassword) {
-          alert("Passwords do not match!");
-          return;
-        }
-  
-        {
-  try {
-    const docRef = await addDoc(collection(db, 'registrations'), {
-      firstName: this.firstName,
-      lastName: this.lastName,
-      email: this.email,
-      phoneNumber: this.phoneNumber,
-      school: this.school,
-      role: this.role,
-      password: this.password // Ensure sensitive data handling in production.
-    });
-    console.log("Document written with ID: ", docRef.id); // Check the console for this log.
-    alert('Registration successful!');
-    this.clearForm();
-  } catch (error) {
-    console.error('Error registering: ', error); // Look for error logs here.
-  }
-}
-      },
-      clearForm() {
-        this.firstName = '';
-        this.lastName = '';
-        this.email = '';
-        this.confirmEmail = '';
-        this.phoneNumber = '';
-        this.school = '';
-        this.password = '';
-        this.confirmPassword = '';
-        this.role = '';
+import { getAuth, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useRouter } from "vue-router";
+import { ref } from 'vue';
+
+export default {
+  name: "RegistrationForm",
+  setup() {
+    const firstName = ref("");
+    const lastName = ref("");
+    const email = ref("");
+    const phoneNumber = ref("");
+    const school = ref("");
+    const StudyLevel = ref("");
+    const role = ref("");
+    const password = ref("");
+    const confirmPassword = ref("");
+    const loading = ref(false);
+    const router = useRouter();
+
+    const register = async () => {
+      if (password.value !== confirmPassword.value) {
+        alert("Passwords do not match");
+        return;
       }
-    }
-  };
-  </script>
-  
+      
+      loading.value = true;
+      try {
+        const auth = getAuth();
+        await createUserWithEmailAndPassword(auth, email.value, password.value);
+        alert("Registration successful");
+        router.push("/login");
+      } catch (error) {
+        alert(error.message);
+        console.error(error.code);
+      } finally {
+        loading.value = false;
+      }
+    };
+
+    const signInWithGoogle = async () => {
+      try {
+        const auth = getAuth();
+        const provider = new GoogleAuthProvider();
+        await signInWithPopup(auth, provider);
+        router.push("/dashboard");
+      } catch (error) {
+        alert(error.message);
+        console.error(error.code);
+      }
+    };
+
+    return {
+      firstName,
+      lastName,
+      email,
+      phoneNumber,
+      school,
+      StudyLevel,
+      role,
+      password,
+      confirmPassword,
+      loading,
+      register,
+      signInWithGoogle,
+    };
+  },
+};
+</script>
   <style scoped>
-  /* Optional: Customize styles here */
+  /* Customize your form styles here if needed */
   </style>
+  
   

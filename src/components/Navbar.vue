@@ -1,27 +1,33 @@
 <template>
-    <nav class="bg-teal-600 text-white p-4 shadow-md">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="text-2xl font-bold">Educare</div>
-        <ul class="hidden md:flex space-x-6">
-          <li><router-link to="/" class="hover:text-teal-200">Sign Up</router-link></li>
-          <li><router-link to="/login" class="hover:text-teal-200">Login</router-link></li>
-          <li><router-link to="/password-reset" class="hover:text-teal-200">Password Reset</router-link></li>
-        </ul>
-        <!-- Mobile Menu Button -->
-        <button
-          @click="toggleMenu"
-          class="md:hidden text-2xl focus:outline-none"
-        >
-          ☰
-        </button>
-      </div>
-      <!-- Mobile Menu -->
-      <ul v-if="isMenuOpen" class="md:hidden flex flex-col space-y-2 mt-4">
-        <li><router-link to="/" class="hover:text-teal-200">Sign Up</router-link></li>
-        <li><router-link to="/login" class="hover:text-teal-200">Login</router-link></li>
-        <li><router-link to="/password-reset" class="hover:text-teal-200">Password Reset</router-link></li>
-      </ul>
-    </nav>
+    <div class="flex bg-white text-[#558794] py-1.5 px-20 shadow md:flex justify-between items-center">
+    <!-- Logo Section -->
+        <div class="flex items-center cursor-pointer ">
+            <span class="text-green-300 text-xl mr-1">
+                <i class="bi bi-messenger"></i>
+            </span>
+            <h1 class="text-xl">Educare</h1>
+        </div>
+    
+    <!-- Navigation Section -->
+        <nav class="flex md:flex p-0 mt-1 md:mt-0 ">
+            <ul class="flex flex-row list-none md:flex-col md:items-center justify-center md:justify-between w-auto">
+                <span></span>
+                <li class="md:mx-4 ">
+                    <a href="#" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Home</a>
+                </li>
+                <li class="md:mx-4 ">
+                    <a href="#" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">About</a>
+                </li>
+                <li class="md:mx-4 ">
+                    <a href="#" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Services</a>
+                </li>
+                <li class="md:mx-4 ">
+                    <a href="#" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Contact</a>
+                </li>
+            </ul>
+        </nav>
+</div>
+
   </template>
   
   <script>
