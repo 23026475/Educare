@@ -12,39 +12,59 @@
         <!-- Form Fields -->
         <div class="flex flex-col gap-6 w-full max-w-md">
           <!-- Email Field -->
-          <div class="flex flex-col w-full">
-  <label for="email" class="font-semibold text-lg">Email Address</label>
-  <input
-    id="email"
-    type="email"
-    class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 w-full"
-    placeholder="Enter your email"
-  />
-</div>
+          <div class="flex flex-col w-full relative">
+            <label for="email" class="font-semibold text-lg">Email Address</label>
+            <div class="relative">
+              <input
+                id="email"
+                type="email"
+                class="border border-black rounded-lg px-4 py-2 pl-10 focus:outline-none focus:border-blue-500 w-full"
+                placeholder="Enter your email"
+              />
+              <i class="fas fa-envelope absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-500"></i>
+            </div>
+          </div>
 
           <!-- Password Field -->
-          <div class="flex flex-col w-full">
-  <label for="password" class="font-semibold text-lg">Password</label>
-  <input
-    id="password"
-    type="password"
-    class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 w-full"
-    placeholder="Enter your password"
-  />
-</div>
+          <div class="flex flex-col w-full relative">
+            <label for="password" class="font-semibold text-lg">Password</label>
+            <div class="relative">
+              <input
+                id="password"
+                type="password"
+                class="border border-black rounded-lg px-4 py-2 pl-10 pr-10 focus:outline-none focus:border-blue-500 w-full"
+                placeholder="Enter your password"
+              />
+              <i class="fas fa-lock absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-500"></i>
+              <i class="fas fa-eye absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-500 cursor-pointer"></i>
+            </div>
+            <!-- Forgot Password Link -->
+            <div class="text-right mt-2">
+              <a
+                @click="onForgotPasswordClick"
+                class="text-blue-500 hover:underline cursor-pointer font-semibold"
+                style="font-size: 0.75rem;"
+              >
+                Forgot Password? Click here
+              </a>
+            </div>
+          </div>
 
           <!-- Role Dropdown -->
-          <div class="flex flex-col w-full">
-  <label for="role" class="font-semibold text-lg">Role</label>
-  <select
-    id="role"
-    class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 w-full"
-  >
-    <option value="" disabled selected>Select your role</option>
-    <option value="educator">Educator</option>
-    <option value="student">Student</option>
-  </select>
-</div>
+          <div class="flex flex-col w-full relative">
+            <label for="role" class="font-semibold text-lg">Role</label>
+            <div class="relative">
+              <select
+                id="role"
+                class="border border-black rounded-lg px-4 py-2 pl-10 focus:outline-none focus:border-blue-500 w-full"
+              >
+                <option value="" disabled selected>Select your role</option>
+                <option value="educator">Educator</option>
+                <option value="student">Student</option>
+              </select>
+              <i class="fas fa-user-tag absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-500"></i>
+            </div>
+          </div>
 
           <!-- Remember Me Checkbox -->
           <div class="flex items-center gap-2">
