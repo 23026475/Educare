@@ -12,18 +12,16 @@
         <nav class="flex md:flex p-0 mt-1 md:mt-0 ">
             <ul class="flex flex-row list-none md:flex-col md:items-center justify-center md:justify-between w-auto">
                 <span></span>
-                <li class="md:mx-4 ">
-                    <a href="#" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Home</a>
+                <li class="md:mx-4">
+                  <router-link to="/" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Log In</router-link>
                 </li>
-                <li class="md:mx-4 ">
-                    <a href="#" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">About</a>
+                <li class="md:mx-4">
+                  <router-link to="/sign-up" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Sign Up</router-link>
                 </li>
-                <li class="md:mx-4 ">
-                    <a href="#" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Services</a>
+                <li class="md:mx-4">
+                  <router-link to="/password-reset" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">password</router-link>
                 </li>
-                <li class="md:mx-4 ">
-                    <a href="#" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Contact</a>
-                </li>
+                
             </ul>
         </nav>
 </div>
