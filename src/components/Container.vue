@@ -12,39 +12,39 @@
         <!-- Form Fields -->
         <div class="flex flex-col gap-6 w-full max-w-md">
           <!-- Email Field -->
-          <div class="flex flex-col">
-            <label for="email" class="font-semibold text-lg">Email Address</label>
-            <input
-              id="email"
-              type="email"
-              class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" 
-              placeholder="Enter your email"
-            />
-          </div>
+          <div class="flex flex-col w-full">
+  <label for="email" class="font-semibold text-lg">Email Address</label>
+  <input
+    id="email"
+    type="email"
+    class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 w-full"
+    placeholder="Enter your email"
+  />
+</div>
 
           <!-- Password Field -->
-          <div class="flex flex-col">
-            <label for="password" class="font-semibold text-lg">Password</label>
-            <input
-              id="password"
-              type="password"
-              class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
-              placeholder="Enter your password"
-            />
-          </div>
+          <div class="flex flex-col w-full">
+  <label for="password" class="font-semibold text-lg">Password</label>
+  <input
+    id="password"
+    type="password"
+    class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 w-full"
+    placeholder="Enter your password"
+  />
+</div>
 
           <!-- Role Dropdown -->
-          <div class="flex flex-col">
-            <label for="role" class="font-semibold text-lg">Role</label>
-            <select
-              id="role"
-              class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500"
-            >
-              <option value="" disabled selected>Select your role</option>
-              <option value="educator">Educator</option>
-              <option value="student">Student</option>
-            </select>
-          </div>
+          <div class="flex flex-col w-full">
+  <label for="role" class="font-semibold text-lg">Role</label>
+  <select
+    id="role"
+    class="border border-black rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 w-full"
+  >
+    <option value="" disabled selected>Select your role</option>
+    <option value="educator">Educator</option>
+    <option value="student">Student</option>
+  </select>
+</div>
 
           <!-- Remember Me Checkbox -->
           <div class="flex items-center gap-2">
@@ -58,22 +58,25 @@
         </div>
       </div>
 
-      <!-- Sign Up Section -->
-      <div class="flex flex-col items-start justify-end pt-0 px-0 pb-2 box-border min-w-[377px] max-w-full text-center text-17xl text-gray mq450:min-w-full">
-        <div class="self-stretch h-[244px] relative">
-          <!-- Decorative Circle Background (adjusted to avoid overlap) -->
-          <div class="absolute top-[-301px] left-[0px] z-[0] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-full bg-darkturquoise-100 w-[535px] h-[545px] pointer-events-none" />
+<!-- Sign Up Section -->
+<div class="flex flex-col items-start justify-end pt-0 px-0 pb-2 box-border min-w-[377px] max-w-full text-center text-17xl text-gray mq450:min-w-full">
+  <div class="self-stretch h-[244px] relative">
+    <!-- Decorative Circle Background (adjusted to avoid overlap) -->
+    <div class="absolute top-[-480px] left-[100px] z-[0] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-full bg-darkturquoise-100 w-[535px] h-[545px] pointer-events-none"></div>
 
-          <div class="absolute top-[35px] left-[141px] w-[203px] h-[69px]">
-            <a class="relative font-semibold flex items-center justify-center w-full h-full cursor-pointer z-[2] mq975:text-3xl mq1000:text-10xl" @click="onSignUpTextClick">
-              Sign Up
-            </a>
-          </div>
-          <div class="absolute top-[0px] left-[78px] text-xl font-semibold text-writing z-[3] mq975:text-base">
-            Don’t have an account?
-          </div>
-        </div>
-      </div>
+    <div class="absolute top-[-120px] left-[141px] w-[223px] h-[39px]">
+      <a 
+        class="relative font-semibold flex items-center justify-center w-full h-full cursor-pointer z-[2] rounded-lg bg-teal-100 text-white py-3 px-8 shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] hover:bg-cadetblue rounded-xl transition duration-300"
+        @click="onSignUpTextClick"
+      >
+        Sign Up
+      </a>
+    </div>
+    <div class="absolute top-[-150px] left-[132px] text-xl font-semibold text-writing z-[3] mq975:text-base">
+      Don’t have an account?
+    </div>
+  </div>
+</div>
     </div>
   </div>
 </template>
