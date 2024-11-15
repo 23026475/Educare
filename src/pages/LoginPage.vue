@@ -15,23 +15,9 @@
         <div
           class="flex-1 flex flex-row items-start justify-start relative max-w-full"
         >   
-          <button
-            class="cursor-pointer [border:none] py-1.5 pl-1 pr-[3px] bg-teal-100 flex-1 shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] rounded-xl flex flex-row items-start justify-start box-border max-w-full z-[1] hover:bg-cadetblue"
-          >
-            <div
-              class="h-[73px] w-[650px] relative shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] rounded-xl bg-teal-100 hidden max-w-full"
-            />
-            <div
-              class="h-[61px] flex-1 relative text-17xl font-semibold font-syne text-gray text-center flex items-center justify-center max-w-full z-[2] mq450:text-3xl mq800:text-10xl"
-            >
-              Login
-            </div>
-          </button>
         </div>
       </div>
-      <div
-        class="w-[704px] h-px flex flex-row items-start justify-start py-0 pl-[35px] pr-[34px] box-border max-w-full"
-      >
+      <div>      >
         <div
           class="self-stretch flex-1 relative border-black border-t-[1px] border-solid box-border max-w-full z-[1]"
         />
@@ -42,7 +28,7 @@
         A Teacher’s Assistant for Engaging and Interactive Learning
       </h1>
       <img
-        class="w-[600px] h-[800px] absolute !m-[0] bottom-[-118px] left-[-537px] object-cover z-[5]"
+        class="w-[630px] h-[800px] absolute !m-[0] bottom-[-118px] left-[-537px] object-cover z-[5]"
         alt=""
         src="@/images/educare-logo.png"
       />
