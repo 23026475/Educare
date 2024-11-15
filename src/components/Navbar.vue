@@ -13,13 +13,16 @@
             <ul class="flex flex-row list-none md:flex-col md:items-center justify-center md:justify-between w-auto">
                 <span></span>
                 <li class="md:mx-4">
-                  <router-link to="/" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Log In</router-link>
+                  <router-link to="/" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-[#a6eef5]">Home</router-link>
                 </li>
                 <li class="md:mx-4">
-                  <router-link to="/sign-up" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">Sign Up</router-link>
+                  <router-link to="/login" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-[#a6eef5]">Log In</router-link>
                 </li>
                 <li class="md:mx-4">
-                  <router-link to="/password-reset" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-green-300">password</router-link>
+                  <router-link to="/sign-up" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-[#a6eef5]">Sign Up</router-link>
+                </li>
+                <li class="md:mx-4">
+                  <router-link to="/password-reset" class="text-xl p-3 font-bold text-[#558794] no-underline hover:bg-gray-700 hover:text-[#a6eef5]">password</router-link>
                 </li>
                 
             </ul>

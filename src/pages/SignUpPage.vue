@@ -19,7 +19,7 @@
       <img
         class="h-[704px] flex-1 relative max-w-full overflow-hidden object-cover z-5 mq450:h-auto mq450:w-full"
         alt=""
-        src="/add-a-heading-3-1@2x.png"
+        src="@/images/educare-logo.png"
       />
       <div
         class="w-[647px] !m-0 absolute top-[-245px] left-[-95px] flex flex-col items-end justify-start py-0 px-0 box-border mq450:relative mq450:top-0 mq450:left-0 mq450:w-full"
@@ -43,7 +43,7 @@ export default defineComponent({
   components: { CreateAccountButton },
   methods: {
     onLoginTextClick() {
-      this.$router.push("/login-page");
+      this.$router.push("/");
     },
   },
 });

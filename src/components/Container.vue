@@ -86,7 +86,7 @@
 
     <div class="absolute top-[-120px] left-[141px] w-[223px] h-[39px]">
       <a 
-        class="relative font-semibold flex items-center justify-center w-full h-full cursor-pointer z-[2] rounded-lg bg-teal-100 text-white py-3 px-8 shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] hover:bg-cadetblue rounded-xl transition duration-300"
+        class="relative font-semibold flex items-center justify-center w-full h-full cursor-pointer z-[2]  bg-teal-100 text-white py-3 px-8 shadow-[0px_10px_4px_rgba(0,_0,_0,_0.25)] hover:bg-cadetblue rounded-xl transition duration-300"
         @click="onSignUpTextClick"
       >
         Sign Up
