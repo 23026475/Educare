@@ -59,8 +59,10 @@
                 class="border border-black rounded-lg px-4 py-2 pl-10 focus:outline-none focus:border-blue-500 w-full"
               >
                 <option value="" disabled selected>Select your role</option>
-                <option value="educator">Educator</option>
-                <option value="student">Student</option>
+                <option value="educator">Student</option>
+                <option value="student">Learner</option>
+                <option value="educator">Teacher</option>
+                <option value="student">lecturer</option>
               </select>
               <i class="fas fa-user-tag absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-500"></i>
             </div>
